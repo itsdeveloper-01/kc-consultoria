@@ -75,7 +75,7 @@ export default function SiteHeader({ items }: SiteHeaderProps) {
                   <ChevronDown className="h-4 w-4 text-white/56 transition-transform duration-200 group-hover:rotate-180 group-hover:text-white/84" />
                 </button>
 
-                <div className="pointer-events-none absolute left-1/2 top-full z-20 hidden w-[560px] -translate-x-1/2 pt-4 group-hover:block group-focus-within:block">
+                <div className="pointer-events-none absolute left-1/2 top-full z-20 w-[560px] -translate-x-1/2 translate-y-2 pt-4 opacity-0 invisible transition-[opacity,transform,visibility] duration-200 ease-out group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100">
                   <div className="pointer-events-auto overflow-hidden rounded-[24px] border border-white/10 bg-[rgba(3,18,36,0.94)] p-5 shadow-[0_28px_70px_rgba(0,0,0,0.22)] backdrop-blur-xl">
                     <div className={`grid gap-6 ${item.groups.length > 1 ? "grid-cols-2" : "grid-cols-1"}`}>
                       {item.groups.map((group) => (

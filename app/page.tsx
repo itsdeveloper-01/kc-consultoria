@@ -1209,7 +1209,7 @@ export default function Home() {
               <div className="grid gap-5 sm:grid-cols-3">
                 <div className="space-y-1 border-t border-white/10 pt-4">
                   <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--color-gold)]">Xalapa, Veracruz</p>
-                  <p className="text-sm leading-6 text-white/60">Victoria No. 2, Col. Centro, CP 91000</p>
+                  <p className="text-sm leading-6 text-white/60">Victoria Nueva No. XX, Col. Centro, CP 910030</p>
                   <a
                     href="https://maps.app.goo.gl/JMgQ34xX47gThncy7"
                     target="_blank"
@@ -1221,7 +1221,7 @@ export default function Home() {
                 </div>
                 <div className="space-y-1 border-t border-white/10 pt-4">
                   <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--color-gold)]">Ciudad de México</p>
-                  <p className="text-sm leading-6 text-white/60">Morelos No. 23, Col. Tizapán San Ángel, CP 01080</p>
+                  <p className="text-sm leading-6 text-white/60">Calle No. XX, Col. Tizapán San Ángel, CP 010800</p>
                   <a
                     href="https://maps.app.goo.gl/99jZcXJUzP2uZthL7"
                     target="_blank"
