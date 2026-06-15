@@ -42,7 +42,7 @@ export default function CasesCarousel({
           type="button"
           aria-label="Ver testimonio anterior"
           onClick={() => scrollByCard("left")}
-          className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-black/10 bg-[var(--color-panel)] text-[var(--color-ink)] transition hover:border-[var(--color-gold)]/28 hover:text-[var(--color-gold)]"
+          className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-black/10 bg-[var(--color-panel)] text-[var(--color-ink)] transition-[border-color,color,transform] duration-150 hover:border-[var(--color-gold)]/28 hover:text-[var(--color-gold)] active:scale-[0.94]"
         >
           <ArrowLeft className="h-4 w-4" strokeWidth={1.8} />
         </button>
@@ -50,7 +50,7 @@ export default function CasesCarousel({
           type="button"
           aria-label="Ver siguiente testimonio"
           onClick={() => scrollByCard("right")}
-          className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-black/10 bg-[var(--color-panel)] text-[var(--color-ink)] transition hover:border-[var(--color-gold)]/28 hover:text-[var(--color-gold)]"
+          className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-black/10 bg-[var(--color-panel)] text-[var(--color-ink)] transition-[border-color,color,transform] duration-150 hover:border-[var(--color-gold)]/28 hover:text-[var(--color-gold)] active:scale-[0.94]"
         >
           <ArrowRight className="h-4 w-4" strokeWidth={1.8} />
         </button>

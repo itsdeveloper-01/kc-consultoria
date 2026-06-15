@@ -4,24 +4,24 @@ import { useState } from "react";
 
 const items = [
   {
-    question: "Que tipo de empresas atienden?",
+    question: "¿Qué tipo de empresas atienden?",
     answer:
-      "Trabajamos con empresas familiares, companias en expansion, grupos corporativos y direcciones financieras que necesitan asesoria juridica y contable coordinada.",
+      "Trabajamos con empresas familiares, compañías en expansión, grupos corporativos y direcciones financieras que necesitan asesoría jurídica y contable coordinada.",
   },
   {
-    question: "Como es el proceso de trabajo?",
+    question: "¿Cómo es el proceso de trabajo?",
     answer:
-      "Iniciamos con una sesion de diagnostico, definimos prioridades y construimos un plan con entregables claros, responsables y seguimiento ejecutivo.",
+      "Iniciamos con una sesión de diagnóstico, definimos prioridades y construimos un plan con entregables claros, responsables y seguimiento ejecutivo.",
   },
   {
-    question: "Con que industrias tienen experiencia?",
+    question: "¿Con qué industrias tienen experiencia?",
     answer:
-      "Hemos acompanado operaciones en servicios profesionales, manufactura ligera, comercio, tecnologia, desarrollo inmobiliario y fondos de inversion.",
+      "Hemos acompañado operaciones en servicios profesionales, manufactura ligera, comercio, tecnología, desarrollo inmobiliario y fondos de inversión.",
   },
   {
-    question: "Donde se encuentran ubicados?",
+    question: "¿Dónde se encuentran ubicados?",
     answer:
-      "Atendemos desde Ciudad de Mexico y trabajamos de forma presencial o remota con empresas en distintos estados del pais.",
+      "Contamos con oficinas en Xalapa, Veracruz; Ciudad de México y Monterrey, Nuevo León. Atendemos de forma presencial o remota a clientes en distintos estados del país.",
   },
 ];
 
@@ -51,9 +51,24 @@ export default function FAQSection() {
                   aria-expanded={open}
                 >
                   <span className="text-lg font-medium text-[var(--color-ink)]">{item.question}</span>
-                  <span className="text-2xl leading-none text-[var(--color-gold)]">{open ? "−" : "+"}</span>
+                  <span
+                    className="shrink-0 text-2xl leading-none text-[var(--color-gold)] transition-transform duration-300 ease-out"
+                    style={{ transform: open ? "rotate(45deg)" : "rotate(0deg)" }}
+                  >
+                    +
+                  </span>
                 </button>
-                {open ? <p className="max-w-[60ch] pb-5 text-sm leading-6 text-[var(--color-muted)]">{item.answer}</p> : null}
+
+                <div
+                  className="grid transition-[grid-template-rows] duration-300 ease-out"
+                  style={{ gridTemplateRows: open ? "1fr" : "0fr" }}
+                >
+                  <div className="overflow-hidden">
+                    <p className="pb-5 text-sm leading-7 text-[var(--color-muted)]">
+                      {item.answer}
+                    </p>
+                  </div>
+                </div>
               </article>
             );
           })}

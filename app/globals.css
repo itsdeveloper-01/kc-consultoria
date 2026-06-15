@@ -52,6 +52,10 @@ body::before {
   background: rgba(199, 154, 59, 0.24);
 }
 
+p:not(.kc-kicker) {
+  text-align: justify;
+}
+
 .kc-kicker {
   color: var(--color-gold);
   font-size: 0.74rem;
@@ -81,6 +85,11 @@ body::before {
 .kc-button-solid:hover {
   transform: translateY(-1px);
   filter: brightness(1.03);
+}
+
+.kc-button-solid:active {
+  transform: scale(0.97);
+  filter: brightness(0.97);
 }
 
 .kc-button-solid:focus-visible,
@@ -114,6 +123,10 @@ input:focus-visible {
   background: rgba(255, 255, 255, 0.06);
 }
 
+.kc-button-outline:active {
+  transform: scale(0.97);
+}
+
 .kc-button-ghost-light {
   display: inline-flex;
   align-items: center;
@@ -139,6 +152,10 @@ input:focus-visible {
   border-color: rgba(199, 154, 59, 0.28);
   background: rgba(248, 243, 235, 1);
   box-shadow: 0 16px 30px rgba(6, 27, 51, 0.08);
+}
+
+.kc-button-ghost-light:active {
+  transform: scale(0.97);
 }
 
 .kc-marquee-track {

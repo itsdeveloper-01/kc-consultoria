@@ -38,14 +38,14 @@ export default function SiteHeader({ items }: SiteHeaderProps) {
     <header className="absolute inset-x-0 top-0 z-50">
       <div className="mx-auto flex max-w-[1728px] items-center justify-between px-5 py-5 sm:px-8 lg:px-10 lg:py-7">
         <a href="#" className="flex min-w-0 items-center gap-3">
-          <span className="relative h-12 w-12 overflow-hidden rounded-full border border-white/16 shadow-[0_12px_28px_rgba(0,0,0,0.2)]">
+          <span className="inline-flex items-center rounded-sm bg-white/10 px-3 py-1.5 backdrop-blur-sm">
             <Image
-              src="/images/logo-01.png"
+              src="/images/logoKC.png"
               alt="Logo de KC Despacho Juridico y Contable."
-              fill
+              width={120}
+              height={40}
               priority
-              sizes="48px"
-              className="object-cover object-[50%_30%] scale-[1.8]"
+              className="h-8 w-auto object-contain"
             />
           </span>
           <span className="hidden min-w-0 lg:block">

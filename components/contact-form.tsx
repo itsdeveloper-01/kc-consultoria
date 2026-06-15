@@ -3,7 +3,7 @@
 import { ArrowUpRight } from "lucide-react";
 import { FormEvent } from "react";
 
-const TEST_EMAIL = "prueba@kcdespacho.com";
+const TEST_EMAIL = "contacto@kcdespacho.com";
 
 const serviceOptions = [
   "Seguridad Social",
@@ -58,7 +58,7 @@ export default function ContactForm() {
 
       <div className="space-y-2">
         <label className="text-xs uppercase tracking-[0.18em] text-white/52" htmlFor="email">
-          Correo electronico
+          Correo electrónico
         </label>
         <input
           id="email"
@@ -72,7 +72,7 @@ export default function ContactForm() {
 
       <div className="space-y-2">
         <label className="text-xs uppercase tracking-[0.18em] text-white/52" htmlFor="phone">
-          Telefono
+          Teléfono
         </label>
         <input
           id="phone"
@@ -86,7 +86,7 @@ export default function ContactForm() {
 
       <div className="space-y-2 sm:col-span-2">
         <label className="text-xs uppercase tracking-[0.18em] text-white/52" htmlFor="service">
-          Servicio de interes
+          Servicio de interés
         </label>
         <select
           id="service"
